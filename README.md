@@ -1,2 +1,1 @@
-# GGM-JavaFX-project
-GGM - Gabe's Garage Manager
+# Gabe's Garage Manager
