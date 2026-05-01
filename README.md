@@ -62,22 +62,22 @@ Note: JavaFX SDK is not included. You must install it locally and configure the 
 
 ### Home
 <p align="center">
-  <img src="docs/home.png" width="700"/>
+  <img src="GGM/docs/home.png" width="700"/>
 </p>
 
 ### Cars
 <p align="center">
-  <img src="docs/cars.png" width="700"/>
+  <img src="GGM/docs/cars.png" width="700"/>
 </p>
 
 ### Reminders
 <p align="center">
-  <img src="docs/reminders.png" width="700"/>
+  <img src="GGM/docs/reminders.png" width="700"/>
 </p>
 
 ### Settings
 <p align="center">
-  <img src="docs/settings.png" width="700"/>
+  <img src="GGM/docs/settings.png" width="700"/>
 </p>
 
 ## What I Learned
