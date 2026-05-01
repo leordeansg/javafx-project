@@ -60,7 +60,12 @@ Note: JavaFX SDK is not included. You must install it locally and configure the 
 
 ## Screenshots
 
-(Add screenshots here)
+<p align="center">
+  <img src="docs/home.png" width="220"/>
+  <img src="docs/cars.png" width="220"/>
+  <img src="docs/reminders.png" width="220"/>
+  <img src="docs/settings.png" width="220"/>
+</p>
 
 ## What I Learned
 
