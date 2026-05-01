@@ -61,16 +61,24 @@ Note: JavaFX SDK is not included. You must install it locally and configure the 
 ## Screenshots
 
 ### Home
-![Home](docs/home.png)
+<p align="center">
+  <img src="docs/home.png" width="700"/>
+</p>
 
 ### Cars
-![Cars](docs/cars.png)
+<p align="center">
+  <img src="docs/cars.png" width="700"/>
+</p>
 
 ### Reminders
-![Reminders](docs/reminders.png)
+<p align="center">
+  <img src="docs/reminders.png" width="700"/>
+</p>
 
 ### Settings
-![Settings](docs/settings.png)
+<p align="center">
+  <img src="docs/settings.png" width="700"/>
+</p>
 
 ## What I Learned
 
