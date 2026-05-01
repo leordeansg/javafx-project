@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox id="vbox" fx:id="vbox" prefHeight="800.0" prefWidth="1200.0" spacing="15" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CarsController">
+   <children>
+      <HBox id="hbox" fx:id="hbox" styleClass="hbox" stylesheets="@../styles/style.css">
+         <children>
+            <Label id="textcolor" fx:id="title" prefHeight="36.0" prefWidth="352.0" styleClass="title" stylesheets="@../styles/style.css" text="GGM @Cars">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Pane id="dragpane" fx:id="dragpane" onMouseDragged="#drag" onMousePressed="#press" prefHeight="50.0" prefWidth="1154.0" stylesheets="@../styles/style.css" HBox.hgrow="ALWAYS" />
+            <Button id="minbutton" fx:id="minbutton" alignment="CENTER_RIGHT" onAction="#min" prefHeight="25.0" prefWidth="21.0" stylesheets="@../styles/style.css" text="—">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="-1.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="closebutton" fx:id="closebutton" alignment="CENTER_RIGHT" onAction="#close" prefHeight="25.0" prefWidth="17.0" stylesheets="@../styles/style.css" text="X">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Text id="linecolor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="────────────────────────────────────────────────────────────────────────────────────────────────────" textAlignment="CENTER" wrappingWidth="1200.18359375">
+         <VBox.margin>
+            <Insets top="-15.0" />
+         </VBox.margin>
+      </Text>
+      <Pane prefHeight="644.0" prefWidth="1201.0">
+         <children>
+            <Pane id="pane" layoutX="14.0" layoutY="-2.0" prefHeight="644.0" prefWidth="363.0">
+               <children>
+                  <Pane id="pane2" layoutX="14.0" layoutY="12.0" prefHeight="620.0" prefWidth="336.0">
+                     <children>
+                        <Label id="textcolor" fx:id="carsError" alignment="CENTER" layoutX="11.0" layoutY="456.0" prefHeight="31.0" prefWidth="315.0" text="Car added succesfully" textFill="WHITE">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" prefHeight="65.0" prefWidth="134.0" stylesheets="@../styles/style.css" text="Nickname">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="65.0" prefHeight="65.0" prefWidth="134.0" stylesheets="@../styles/style.css" text="Make">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="130.0" prefHeight="65.0" prefWidth="134.0" stylesheets="@../styles/style.css" text="Model">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="195.0" prefHeight="65.0" prefWidth="134.0" stylesheets="@../styles/style.css" text="Year">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="260.0" prefHeight="65.0" prefWidth="134.0" stylesheets="@../styles/style.css" text="Plate">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="325.0" prefHeight="65.0" prefWidth="134.0" stylesheets="@../styles/style.css" text="Miles">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField id="button2" fx:id="carsNickname" layoutX="11.0" layoutY="50.0" prefHeight="31.0" prefWidth="315.0" />
+                        <TextField id="button2" fx:id="carsMake" layoutX="11.0" layoutY="115.0" prefHeight="31.0" prefWidth="315.0" />
+                        <TextField id="button2" fx:id="carsModel" layoutX="11.0" layoutY="180.0" prefHeight="31.0" prefWidth="315.0" />
+                        <TextField id="button2" fx:id="carsYear" layoutX="11.0" layoutY="245.0" prefHeight="31.0" prefWidth="315.0" />
+                        <TextField id="button2" fx:id="carsPlate" layoutX="11.0" layoutY="310.0" prefHeight="31.0" prefWidth="315.0" />
+                        <TextField id="button2" fx:id="carsMiles" layoutX="11.0" layoutY="375.0" prefHeight="31.0" prefWidth="315.0" />
+                        <Button id="button" fx:id="carsDeleteCar" layoutX="224.0" layoutY="562.0" mnemonicParsing="false" onAction="#carsDelete" prefHeight="50.0" prefWidth="105.0" text="Delete Car">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="button" fx:id="carsUpdateCar" layoutX="116.0" layoutY="562.0" mnemonicParsing="false" onAction="#carsUpdate" prefHeight="50.0" prefWidth="105.0" text="Update Car">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="button" fx:id="carsAddCar" layoutX="8.0" layoutY="562.0" mnemonicParsing="false" onAction="#carsAdd" prefHeight="50.0" prefWidth="105.0" text="Add Car">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="button" fx:id="carsClearForm" layoutX="8.0" layoutY="506.0" mnemonicParsing="false" onAction="#carsClear" prefHeight="50.0" prefWidth="105.0" text="Clear Form">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="button" fx:id="carsGoToService" layoutX="116.0" layoutY="506.0" mnemonicParsing="false" onAction="#goToService" prefHeight="50.0" prefWidth="105.0" text="Services">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="button" fx:id="carsGoToFinances" layoutX="224.0" layoutY="506.0" mnemonicParsing="false" onAction="#goToFinances" prefHeight="50.0" prefWidth="105.0" text="Finances">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children></Pane>
+               </children></Pane>
+            <Pane id="pane" layoutX="386.0" prefHeight="644.0" prefWidth="801.0">
+               <children>
+                  <TableView id="tableview" fx:id="carsTable" editable="true" layoutX="10.0" layoutY="12.0" prefHeight="620.0" prefWidth="781.0">
+                    <columns>
+                      <TableColumn id="tableview" fx:id="carsTableNickname" prefWidth="150.0" text="Nickname" />
+                      <TableColumn id="tableview" fx:id="carsTableMake" minWidth="0.0" prefWidth="150.0" text="Make" />
+                        <TableColumn id="tableview" fx:id="carsTableModel" minWidth="0.0" prefWidth="150.0" text="Model" />
+                        <TableColumn id="tableview" fx:id="carsTableYear" minWidth="0.0" prefWidth="115.0" text="Year" />
+                        <TableColumn id="tableview" fx:id="carsTablePlate" minWidth="0.0" prefWidth="115.0" text="Plate" />
+                        <TableColumn id="tableview" fx:id="carsTableMiles" minWidth="0.0" prefWidth="96.0" text="Miles" />
+                    </columns>
+                  </TableView>
+               </children></Pane>
+         </children>
+      </Pane>
+      <Text id="linecolor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="────────────────────────────────────────────────────────────────────────────────────────────────────" textAlignment="CENTER" wrappingWidth="1200.18359375" />
+      <Pane prefHeight="29.0" prefWidth="1201.0">
+         <children>
+            <Button id="button" layoutX="491.0" layoutY="-12.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="25.0" prefWidth="220.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="button" layoutX="259.0" layoutY="-12.0" mnemonicParsing="false" onAction="#goToCars" prefHeight="25.0" prefWidth="220.0" text="Cars">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="button" layoutX="723.0" layoutY="-12.0" mnemonicParsing="false" onAction="#goToSettings" prefHeight="25.0" prefWidth="220.0" stylesheets="@../styles/style.css" text="Settings">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox id="vbox" fx:id="vbox" prefHeight="800.0" prefWidth="1200.0" spacing="15" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SettingsController">
+   <children>
+      <HBox id="hbox" fx:id="hbox" styleClass="hbox" stylesheets="@../styles/style.css">
+         <children>
+            <Label id="textcolor" fx:id="title" prefHeight="36.0" prefWidth="352.0" styleClass="title" stylesheets="@../styles/style.css" text="GGM @Settings">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Pane id="dragpane" fx:id="dragpane" onMouseDragged="#drag" onMousePressed="#press" prefHeight="50.0" prefWidth="1053.0" stylesheets="@../styles/style.css" HBox.hgrow="ALWAYS" />
+            <Button id="minbutton" fx:id="minbutton" alignment="CENTER_RIGHT" onAction="#min" prefHeight="25.0" prefWidth="21.0" stylesheets="@../styles/style.css" text="—">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="-1.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="closebutton" fx:id="closebutton" alignment="CENTER_RIGHT" onAction="#close" prefHeight="25.0" prefWidth="17.0" stylesheets="@../styles/style.css" text="X">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Text id="linecolor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="────────────────────────────────────────────────────────────────────────────────────────────────────" textAlignment="CENTER" wrappingWidth="1200.18359375">
+         <VBox.margin>
+            <Insets top="-15.0" />
+         </VBox.margin>
+      </Text>
+      <Pane prefHeight="644.0" prefWidth="1201.0">
+         <children>
+            <Pane id="pane" layoutX="14.0" layoutY="-2.0" prefHeight="649.0" prefWidth="897.0">
+               <children>
+                  <Pane id="pane2" layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="425.0">
+                     <children>
+                        <ColorPicker id="button" fx:id="settingsColorPicker" layoutX="18.0" layoutY="132.0" />
+                        <Label id="textcolor" layoutX="18.0" layoutY="102.0" prefHeight="31.0" prefWidth="124.0" text=" Accent Color:" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button id="button" fx:id="settingsOpenDatabase" layoutX="14.0" layoutY="47.0" mnemonicParsing="false" onAction="#openDatabase" prefHeight="50.0" prefWidth="190.0" text="Open Database Path">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Label id="textcolor" alignment="CENTER" layoutX="92.0" layoutY="1.0" prefHeight="31.0" prefWidth="224.0" text="General Settings" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text id="linecolor" fill="WHITE" layoutX="-33.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="───────────────────────────────────" textAlignment="CENTER" wrappingWidth="490.18359375" />
+                     </children>
+                  </Pane>
+                  <Pane id="pane2" layoutX="461.0" layoutY="14.0" prefHeight="300.0" prefWidth="425.0">
+                     <children>
+                        <Label id="textcolor" alignment="CENTER" layoutX="101.0" layoutY="4.0" prefHeight="25.0" prefWidth="224.0" text="Future Improvements" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="43.0" prefHeight="31.0" prefWidth="224.0" text="- Car Service Export" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="74.0" prefHeight="31.0" prefWidth="224.0" text="- Car Finance Export" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="164.0" prefHeight="31.0" prefWidth="224.0" text="- Login System" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="195.0" prefHeight="31.0" prefWidth="224.0" text="- Cloud Storage of Database" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="133.0" prefHeight="31.0" prefWidth="224.0" text="- Custom User Themes" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="226.0" prefHeight="31.0" prefWidth="232.0" text="- Website / Community for App" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="textcolor" layoutX="14.0" layoutY="105.0" prefHeight="31.0" prefWidth="224.0" text="- Reminders sent by Email" textFill="#d0d0d0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text id="linecolor" fill="WHITE" layoutX="-33.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="───────────────────────────────────" textAlignment="CENTER" wrappingWidth="490.18359375" />
+                     </children></Pane>
+                  <Pane id="pane2" layoutX="14.0" layoutY="335.0" prefHeight="300.0" prefWidth="425.0" />
+                  <Pane id="pane2" layoutX="461.0" layoutY="335.0" prefHeight="300.0" prefWidth="425.0" />
+               </children>
+            </Pane>
+            <Pane id="pane" layoutX="922.0" layoutY="-2.0" prefHeight="649.0" prefWidth="265.0">
+               <children>
+                  <Pane id="settingslogo" layoutX="84.0" layoutY="48.0" prefHeight="99.0" prefWidth="97.0" />
+                  <ImageView fitHeight="166.0" fitWidth="200.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/GGMtransparent.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="textcolor" alignment="CENTER" layoutX="17.0" layoutY="159.0" prefHeight="43.0" prefWidth="232.0" text="Gabe's Garage Manager" textFill="#d0d0d0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label id="textcolor" alignment="CENTER" layoutX="17.0" layoutY="202.0" prefHeight="31.0" prefWidth="232.0" text="Version: 1.2" textFill="#d0d0d0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label id="textcolor" alignment="CENTER" layoutX="17.0" layoutY="233.0" prefHeight="31.0" prefWidth="232.0" text="Type: SQLite" textFill="#d0d0d0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label id="textcolor" alignment="CENTER" layoutX="17.0" layoutY="264.0" prefHeight="31.0" prefWidth="232.0" text="Last Update: 02/02/2026" textFill="#d0d0d0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button id="button" fx:id="settingsResetApp" layoutX="38.0" layoutY="585.0" mnemonicParsing="false" onAction="#resetDatabase" prefHeight="50.0" prefWidth="190.0" text="Reset Application">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Text id="linecolor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="────────────────────────────────────────────────────────────────────────────────────────────────────" textAlignment="CENTER" wrappingWidth="1200.18359375" />
+      <Pane prefHeight="29.0" prefWidth="1201.0">
+         <children>
+            <Button id="button" layoutX="491.0" layoutY="-12.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="25.0" prefWidth="220.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="button" layoutX="259.0" layoutY="-12.0" mnemonicParsing="false" onAction="#goToCars" prefHeight="25.0" prefWidth="220.0" text="Cars">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="button" layoutX="723.0" layoutY="-12.0" mnemonicParsing="false" onAction="#goToSettings" prefHeight="25.0" prefWidth="220.0" stylesheets="@../styles/style.css" text="Settings">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>

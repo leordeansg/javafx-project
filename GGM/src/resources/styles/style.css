@@ -1,0 +1,159 @@
+.root { /* variables for colors */
+   -app-text: #dddddd;
+   -app-back0: rgb(15, 15, 15);
+   -app-back1: rgb(20, 20, 20);
+   -app-back2: rgb(25, 25, 25);
+   -app-back3: rgb(30, 30, 30);
+   -app-back4: rgb(35, 35, 35);
+   -app-back5: rgb(60, 60, 60);
+}
+
+#linecolor {
+    -fx-fill: -app-text;
+}
+
+#settingslogo {
+    -fx-background-color: -app-text;
+}
+
+#vbox {
+    -fx-background-color: -app-back1;
+    -fx-background-radius: 10;
+}
+
+#title {
+    -fx-fill-color: -app-text;
+}
+
+#closebutton {
+    -fx-background-color: -app-back1;
+    -fx-background-radius: 10;
+    -fx-text-fill: -app-text;
+}
+
+#minbutton {
+    -fx-background-color: -app-back1;
+    -fx-background-radius: 0;
+    -fx-text-fill: -app-text;
+}
+
+#button {
+    -fx-text-fill: -app-text;
+    -fx-background-color: -app-back0
+}
+
+#button2 {
+    -fx-text-fill: -app-text;
+    -fx-background-color: -app-back4;
+    -fx-background-radius: 10;
+}
+
+#datepicker {
+    -fx-background-color: -app-back4;
+    -fx-background-radius: 10;
+}
+
+#datepicker .text-field {
+    -fx-background-color: -app-back4;
+    -fx-text-fill: -app-text;
+    -fx-background-radius: 10;
+}
+
+#datepicker .arrow-button {
+    -fx-background-color: -app-back4;
+}
+
+#datepicker .arrow {
+    -fx-background-color: -app-text;
+}
+
+#pane {
+    -fx-background-color: -app-back2;
+    -fx-background-radius: 15;
+}
+
+#pane2 {
+    -fx-background-color: -app-back3;
+    -fx-background-radius: 15;
+}
+
+#pane3 {
+    -fx-background-color: -app-back4;
+    -fx-background-radius: 15;
+}
+
+#listview {
+    -fx-background-color: -app-back3;
+    -fx-text-fill: -app-text;
+    -fx-background-radius: 15;
+}
+
+#listview .list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+#listview .list-cell {
+    -fx-background-color: -app-back3;
+    -fx-text-fill: -app-text;
+}
+
+#listview .list-cell:selected {
+    -fx-background-color: -app-back5;
+    -fx-text-fill: -app-text;
+    -fx-background-radius: 15;
+}
+
+#tableview {
+    -fx-background-color: -app-back3;
+    -fx-background-radius: 15;
+    -fx-border-color: transparent;
+}
+
+#tableview {
+    -fx-background-color: -app-back3;
+    -fx-background-radius: 15;
+    -fx-border-color: transparent;
+}
+
+#tableview .column-header-background {
+    -fx-background-color: -app-back3;
+    -fx-background-radius: 15;
+}
+
+#tableview .column-header .label {
+    -fx-text-fill: -app-text;
+}
+
+#tableview .column-header {
+    -fx-border-color: -app-text;
+    -fx-border-width: 0 0 1 0;
+}
+
+#tableview .placeholder .label {
+    -fx-text-fill: -app-text;
+}
+
+#tableview .table-cell {
+    -fx-text-fill: -app-text;
+    -fx-background-color: -app-back3;
+    -fx-background-radius: 15;
+    -fx-alignment: CENTER;
+}
+
+#tableview .table-row-cell {
+    -fx-text-fill: -app-text;
+    -fx-background-color: -app-back3;
+    -fx-background-radius: 15;
+}
+
+#tableview .table-row-cell:selected {
+    -fx-background-color: -app-back5;
+}
+
+#tableview .table-row-cell:selected .table-cell {
+    -fx-background-color: -app-back5;
+}
+
+#textcolor {
+    -fx-text-fill: -app-text;
+}
