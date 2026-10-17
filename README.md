@@ -95,7 +95,3 @@ Note: JavaFX SDK is not included. You must install it locally and configure the 
 * Cloud backup and sync
 * Data export (CSV or PDF)
 * Data visualisation (charts)
-
-## Notes
-
-This project was built as part of a university module but designed to reflect a real world application with practical use.
